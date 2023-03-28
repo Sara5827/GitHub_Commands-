@@ -61,5 +61,26 @@ _A list of my commonly used Git commands_
 | ------- | ----------- |
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
+| `git log -p -`[ commit id ]` | View change of one commit (detailed) |
+| `git log -follow `[ file ]` | Show the commit that changed file, even across rename |
+| `git log [branch name A ].. [branch name B ]` | Show the commits on branchA that are not on branchB |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+
+
+### Rewrite History
+
+| Command | Description |
+| ------- | ----------- |
+| `git rebase [branch]` | Applly any commit of current branch ahead of specified one |
+| `git reset --hard [commit]` | Clear staging rewrite working tree from specified commit |
+| `git revert [commit]` | Undoing committed changes |
+
+### Temporary Commits
+
+| Command | Description |
+| ------- | ----------- |
+| `git stash` | Save modified and staged changes |
+| `git stash list` | List stack-order of stashed file changes |
+| `git stash pop` | Write working from top of stash stack |
+
